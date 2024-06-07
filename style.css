@@ -1,0 +1,401 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #ff758c;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #ff7eb3;
+  border-radius: 5px;
+}
+
+/* About Us */
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #eaf7f7;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-content {
+  width: 50%;
+  padding: 20px;
+}
+
+.text-content h5 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.image-content {
+  width: 50%;
+  padding: 20px;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+/* Trending Designs */
+.trending-designs {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.trending-designs h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.carousel-caption h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption .btn {
+  font-size: 14px;
+}
+
+/* Our Story */
+.our-story {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.our-story .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.our-story h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.our-story p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.our-story .btn {
+  font-size: 14px;
+}
+
+.our-story .video-content {
+  width: 100%;
+}
+
+.our-story .video-content video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Catalogue */
+.catalogue {
+  padding: 40px 0;
+}
+
+.catalogue h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.catalogue-item {
+  margin-bottom: 20px;
+}
+
+.catalogue-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.catalogue-item h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.catalogue-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Reviews */
+.reviews-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.reviews-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.review-card {
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s, border 0.3s;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #ff758c, #ff7eb3);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff7eb3;
+}
+
+.review-card .card-body {
+  padding: 20px;
+}
+
+.review-card .card-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    margin-bottom: 30px;
+  }
+}
+
+/* Contact Us */
+.contact-us-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  /* color: #fff; */
+}
+
+.contact-us-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-item i {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.contact-details h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.contact-details p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Booking Section */
+.booking-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%);
+  color: #fff;
+}
+
+.booking-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.booking-form .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #ff758c;
+  background: #fff;
+}
+
+.booking-form textarea.form-control {
+  resize: none;
+}
+
+.booking-form .btn-primary {
+  background-color: #fff;
+  color: #ff758c;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.booking-form .btn-primary:hover {
+  background-color: #ff758c;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #ff7eb3;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-us-content, .our-story .container {
+    flex-direction: column;
+  }
+
+  .about-us .text-content, .about-us .image-content, .our-story .text-content, .our-story .video-content {
+    width: 100%;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+
+  .catalogue-item img {
+    width: 100px;
+    height: 100px;
+  }
+}
